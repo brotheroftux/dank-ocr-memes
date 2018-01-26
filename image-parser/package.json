@@ -1,0 +1,19 @@
+{
+  "name": "image-parser",
+  "version": "1.0.0",
+  "description": "Image parsing microservice for dank-ocr-memes.",
+  "main": "index.js",
+  "author": "StargazingTux <thepenguinbrother@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "cd src && node main.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "request": "^2.83.0",
+    "request-promise-native": "^1.0.5",
+    "sharp": "^0.19.0",
+    "tesseract.js": "^1.0.10"
+  }
+}

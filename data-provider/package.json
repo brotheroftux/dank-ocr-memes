@@ -1,0 +1,19 @@
+{
+  "name": "data-provider",
+  "version": "1.0.0",
+  "description": "Twitter & Instagram data provide for dank-ocr-memes",
+  "main": "index.js",
+  "author": "StargazingTux <thepenguinbrother@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "cd src && node main.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "node-instagram": "^4.1.0",
+    "request": "^2.83.0",
+    "request-promise-native": "^1.0.5",
+    "twit": "^2.2.9"
+  }
+}

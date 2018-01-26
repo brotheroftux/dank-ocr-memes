@@ -1,0 +1,38 @@
+version: "3"
+services:
+    backend:
+        image: backend
+        depends_on:
+            - data-provider
+            - image-parser
+        deploy:
+            restart_policy:
+                condition: on-failure
+        ports:
+            - "8080:8080"
+        networks:
+            - webnet
+
+    image-parser:
+        image: image-parser
+        deploy:
+            replicas: 2
+            restart_policy:
+                condition: on-failure
+        ports:
+            - "7335:7335"
+        networks:
+            - webnet
+
+    data-provider:
+        image: data-provider
+        deploy:
+            restart_policy:
+                condition: on-failure
+        ports:
+            - "7334:7334"
+        networks:
+            - webnet
+
+networks: 
+    webnet:

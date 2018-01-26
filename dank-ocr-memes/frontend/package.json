@@ -1,0 +1,42 @@
+{
+  "name": "dank-twitter-frontend",
+  "version": "1.0.0",
+  "description": "Frontend application for dank-twitter-memes.",
+  "main": "index.js",
+  "author": "Daniel Kuznetsov (brotheroftux) <thepenguinbrother@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "cd config && webpack-dev-server",
+    "build": "cd config && webpack",
+    "build-prod": "cd config && webpack --env.prod",
+    "build-analyze": "cd config && webpack --env.prod --env.analyze",
+    "watch": "cd config && webpack --watch"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "compression-webpack-plugin": "^1.0.1",
+    "css-loader": "^0.28.7",
+    "eslint": "^4.10.0",
+    "eslint-loader": "^1.9.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "fetch-jsonp": "^1.1.3",
+    "hmacsha1": "^1.0.0",
+    "html-webpack-plugin": "^2.30.1",
+    "node-sass": "^4.5.3",
+    "querystring-browser": "^1.0.4",
+    "sass-loader": "^6.0.6",
+    "svg-sprite-loader": "^3.4.1",
+    "tesseract.js": "^1.0.10",
+    "vue": "^2.5.2",
+    "vue-loader": "^13.3.0",
+    "vue-template-compiler": "^2.5.2",
+    "webpack": "^3.8.1",
+    "webpack-bundle-analyzer": "^2.9.0",
+    "webpack-dev-server": "^2.9.4",
+    "webpack-merge": "^4.1.1"
+  }
+}

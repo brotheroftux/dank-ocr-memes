@@ -1,0 +1,1 @@
+docker stack rm dank-ocr-memes && docker build -t backend . && docker stack deploy -c docker-compose.yml dank-ocr-memes
